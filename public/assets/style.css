@@ -1,0 +1,308 @@
+
+
+/* Setting background for page with image url and formatting to be responsive */
+
+body {
+    background-image: url(./images/aboutBackgroundPink.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 210%;
+}
+
+
+
+/* Setting navbar background to a wine red */
+
+.navbar {
+    background-color: #314455;
+
+}
+
+/* setting nav bar links to white */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* set links to other pages to be on the right of the navbar */
+
+.navbar-nav {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+       
+} 
+
+/* Set logo of navbar (my name) to different font and size to distinguish it from the links */
+
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+/* adding color to dropdown menu */
+
+.nav-link {
+  background-color: #314455;
+  text-align: center;
+}
+
+/* CSS for jumbotron on each page */
+
+.jumbotron.jumbotron-fluid {
+    width: 80%;
+    height: auto;
+    margin: 30px;
+    background-color: #f2d8dc81;
+    background-image: url(./images/bluejumbotron.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 90%;
+}  
+
+/* Making a separate background size for the url for portfolio page to adjust the height */
+
+.jumbotron.jumbotron-fluid {
+  background-size: 100% 95%;
+}
+
+/* resizing about me photo - original size was too large */
+
+.Rachel {
+    width: 35%;
+    height: auto;
+    float: left;
+    margin: 0px 20px 0px 0px;
+    
+
+}
+
+/* setting About Me title font */
+
+.display-4 { 
+    font-family: 'Montserrat', sans-serif;
+    color:  #314455;
+    font-size: 5vw;
+}
+
+/* Setting style for paragraphs on about me page */
+
+.lead {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #314455;
+    font-weight: 100;
+}
+
+/* CSS for portfolio HTML */
+
+/* sizing portfolio images */
+
+.img {
+    width: 240px;
+    height: 268px;
+}
+
+/* creating rows and columns within the jumbotron to lay portfolio photos in a grid */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+
+/* CSS for form page */
+
+  form {
+      color:  #314455;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+ .btn {
+     background-color: #314455;
+     border-color: #314455;
+     color: white;
+     font-family: 'Montserrat', sans-serif;
+ }
+  
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f0f0b0;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/* Setting footer color, font and text size to compliment the navbar style. Same style applied across all pages. */
+.footer {
+    background-color:#314455;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.footer-text {
+    background-color:#314455;
+    color: white;
+    font-size: 80%;
+}
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) to provide links to my social media pages. */
+.icon-bar {
+    position: fixed;
+    top: 40%;
+    left: 2%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .github {
+    background: black;
+    color: white;
+    font-size:36px
+  }
+
+  /* portfolio page styling */
+
+  #liveButton {
+    margin-left: 25%;
+  }
+
+  #codeButton {
+    margin-left: 2%;
+  }
+
+  .projectTitle {
+    text-align: center;
+    color:  #314455;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .projectDescription {
+    color:  #314455;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+  }
+  
+  #portCards {
+    margin-top: 5%;
+  }
+
+
+  /* CSS for cards with skills */
+
+  #frontEnd {
+    margin-left: 20%;
+    margin-top: 5%;
+    
+  }
+ 
+
+  #backEnd {
+    margin-top: 5%;
+
+  }
+
+  #frontCard, #backCard {
+
+    background-color: #314455;
+    color:  white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    width: 60%;
+  }
+
+  #skillList {
+    background-color: #465a6b;
+    color:  white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media screen and (max-width: 886px) {
+    #backEnd {
+      margin-left: 20%;
+    }
+  }
