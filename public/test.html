@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .skills {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 400px;
+            width: 300px;
+            transform: translate(-50%, -50%);
+            transform-style: preserve-3d;
+            perspective: 600px;
+            transition: 0.5s;
+        }
+
+        .skills:hover .skill-front {
+            transform: rotateX(-180deg);
+        }
+
+        .skills:hover .skill-back {
+            transform: rotateX(0deg);
+        }
+
+        .skill-front {
+            height: 100%;
+            width: 100%;
+            background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            backface-visibility: hidden;
+            transform: rotateX(0deg);
+            transition: 0.5s;
+        }
+
+        .skill-back {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            backface-visibility: hidden;
+            transform: rotateX(180deg);
+            transition: 0.5s;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .skill-back h2 {
+            margin: 60% auto 35% auto;
+            font-size: 26px;
+        }
+
+        .skill-back h2 span {
+            font-size: 20px;
+        }
+
+        .skill-back a {
+            height: 20px;
+            width: 20px;
+            padding: 5px 5px;
+            border-radius: 4px;
+            line-height: 20px;
+        }
+
+        .skill-back a:hover {
+            color: #000000;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skills">
+        <div class="skill-front"></div>
+        <div class="skill-back">
+            <h2>Jane Doe<br><span>Senior Designer</span></h2>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+                <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

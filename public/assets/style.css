@@ -1,9 +1,75 @@
 #hero {
   background-image: url(./images/portartbackground.png);
-  width:auto;
+  width: auto;
   height: 32rem;
+  background-size: cover;
   animation-duration: 4s;
   background-repeat: no-repeat;
+
+}
+
+.navbar {
+  background-color: #0D2E5B;
+  color: #fff;
+  position: sticky
+  /* position: fixed;
+    width: 100%;
+    top: 0; */
+
+}
+
+button .navbar-toggler {
+  color: white;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: 'Rock Salt', cursive;
+
+}
+
+/* Setting navbar background to a wine red */
+
+
+/* setting nav bar links to white */
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .sectionSpacing{
+  padding-top: 60px;
+}
+
+/* set links to other pages to be on the right of the navbar */
+
+
+/* adding color to dropdown menu */
+
+.nav-link {
+background-color: #0D2E5B;
+color: white;
+text-align: center;
+}
+
+.navbar-nav {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+  position: absolute;
+  right: 0px;
+  width: 300px;
+}
+
+.nav-link {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Top page text. */
@@ -23,19 +89,36 @@
 .sectionSpacing {
   margin-bottom: 5%;
   margin-top: 5%;
+  font-family: 'Roboto Slab', serif;
 }
 
+h1{
+  margin-bottom: 2%;
+}
 /*About me section*/
 
 .Rachel {
   width: 95%;
   height: auto;
   float: left;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 #aboutMeText {
   font-family: 'Montserrat', sans-serif;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #0D2E5B;
+}
+
+.fab:hover{
+  opacity: 0.7;
 }
 
 /* Scroll down icon */
@@ -152,4 +235,78 @@ html {
 
 .portCard {
   width: 60%;
+}
+
+
+/*Skills Section*/
+
+.skills {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.skills:hover .skill-front {
+  transform: rotateX(-180deg);
+}
+
+.skills:hover .skill-back {
+  transform: rotateX(0deg);
+}
+
+.skill-front {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.skill-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+}
+
+.skill-back h2 {
+  /* margin: 60% auto 35% auto; */
+  font-size: 26px;
+}
+
+.skill-back h2 span {
+  font-size: 10px;
+}
+
+.skill-back a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+
+.skill-back a:hover {
+  color: #000000;
+  background-color: #fff;
 }
