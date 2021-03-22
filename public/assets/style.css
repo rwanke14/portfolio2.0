@@ -8,6 +8,22 @@
 
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#lineDivider{
+  width: 50%;
+  height: 5%;
+  
+}
+
+body{
+  background-color: #efeffb;
+}
+
 .navbar {
   background-color: #0D2E5B;
   color: #fff;
@@ -45,6 +61,7 @@ button .navbar-toggler {
 
 .sticky + .sectionSpacing{
   padding-top: 60px;
+  height: 50%;
 }
 
 /* set links to other pages to be on the right of the navbar */
@@ -241,7 +258,7 @@ html {
 /*Skills Section*/
 
 .skills {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   height: 400px;
@@ -261,9 +278,10 @@ html {
 }
 
 .skill-front {
+  color: white;
   height: 100%;
   width: 100%;
-  background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
+  background-image: url(./images/purplevector.jpg);
   background-position: 50% 50%;
   background-size: cover;
   position: absolute;
@@ -273,6 +291,7 @@ html {
   backface-visibility: hidden;
   transform: rotateX(0deg);
   transition: 0.5s;
+  text-align: center;
 }
 
 .skill-back {
@@ -281,6 +300,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  background-image: url(./images/skillbackground.png);
   background-color: #000000;
   backface-visibility: hidden;
   transform: rotateX(180deg);
@@ -289,8 +309,13 @@ html {
   text-align: center;
 }
 
+.skill-front h2 {
+  margin: 50% auto 10% auto;
+  font-size: 26px;
+}
+
 .skill-back h2 {
-  /* margin: 60% auto 35% auto; */
+  margin: 20% auto 10% auto;
   font-size: 26px;
 }
 
@@ -298,7 +323,7 @@ html {
   font-size: 10px;
 }
 
-.skill-back a {
+.skill-back .skill-front a {
   height: 20px;
   width: 20px;
   padding: 5px 5px;
@@ -309,4 +334,72 @@ html {
 .skill-back a:hover {
   color: #000000;
   background-color: #fff;
+}
+/* 
+/* #skills1 {
+  float: left;
+} */
+
+/* #skills2 {
+  position: relative;;
+} */ 
+
+
+/* Contact Forms */
+
+form {
+  color:  #0D2E5B;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+.btn {
+ background-color: #0D2E5B;
+ border-color: #0D2E5B;
+ color: white;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style the container/contact section */
+.container {
+border-radius: 5px;
+background-color: #f2f0f0b0;
+padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+float: left;
+width: 50%;
+margin-top: 6px;
+padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+footer{
+  margin-top: 5%;
+}
+
+#footer {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 10%;
 }

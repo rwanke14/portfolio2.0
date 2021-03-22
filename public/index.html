@@ -55,11 +55,11 @@
           <img class="Rachel" src="./assets/images/canvaprofile.png" alt="photo of Rachel">
           <div class="wrapper" id="socialMedia">
 
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
+            <a href="https://github.com/rwanke14"><i class="fab fa-github"></i></a> 
+            <a href="https://www.linkedin.com/in/rachel-wanke-038757b/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.pinterest.com/rkhlaw/_saved/"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.instagram.com/rkhlaw26/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/rachel.horne.393"><i class="fab fa-facebook"></i></a>
 
           </div>
         </div>
@@ -91,45 +91,63 @@
     </div>
   </section>
 
+  <hr>
 
+  <!-- <section class="center">
+    <img src="./assets/images/lineicon.png" alt="" id="lineDivider">
+  </section> -->
 
   <!-- Skills Section -->
   <section id="skills" class="sectionSpacing">
-    <div class="row container-fluid">
-      <h1>Skills</h1>
-     
-  
-      
-        <ul> Front End:
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript
-            <ul>
-              <li>Vanilla</li>
-              <li>ES6</li>
-            </ul>
-          </li>
-          <li>jQuery</li>
-          <li>IndexDB</li>
-          <li>Lighthouse</li>
-        </ul>
-      </div>
-      <div class="col-lg-6">
-        <ul> Back End:
-          <li>mySQL</li>
-          <li>Sequelize</li>
-          <li>MongoDB</li>
-          <li>Mongoose</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>React</li>
-          <li>PWAs</li>
-        </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Skills</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills">
+              <div class="skill-front">
+                <h2>Front End Skills</h2>
+                <h6>(Flip Over)</h6>
+              </div>
+              <div class="skill-back">
+                <h2>Front End Skills<br></h2>
+
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>jQuery</p>
+                <p>React</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills">
+              <div class="skill-front">
+                <h2>Back End Skills</h2>
+                <h6>(Flip Over)</h6>
+
+
+              </div>
+              <div class="skill-back">
+                <h2>Back End Skills<br></h2>
+                <p>mySQL</p>
+                <p>Sequelize</p>
+                <p>MongoDB</p>
+                <p>Mongoose</p>
+                <p>Node.js</p>
+                <p>Express</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
   </section>
 
+  <hr>
   <!-- Portfolio Section -->
   <section id="portfolio" class="sectionSpacing">
     <div class="container-fluid">
@@ -210,10 +228,66 @@
   <!-- contact form section -->
   <section id="contact">
     <div class="container-fluid">
-      ...
+      <h1 class="display-4">Contact</h1>
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h5>Want to know more?</h6>
+            <p>If you are interested in learning more about me or have a work request please contact me by phone or
+              email. </p>
+            <a
+              href="https://docs.google.com/document/d/1tUZ-N2t_EZ34sKDhy56j1RG01nbNAeUGqk1MnumeHRg/edit?usp=sharing">Resume</a>
+            <p>Phone: 919-306-4168</p>
+            <p>Email: rkhorne09@gmail.com</p>
+
+            <br>
+            <h5>Connect with me on social media!</h6>
+              <div>
+                <a href="https://github.com/rwanke14"><i class="fab fa-github"></i></a> 
+                <a href="https://www.linkedin.com/in/rachel-wanke-038757b/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.pinterest.com/rkhlaw/_saved/"><i class="fab fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/rkhlaw26/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/rachel.horne.393"><i class="fab fa-facebook"></i></a>
+              </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <form id="contactForm" action="">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="requester" class="form-control" placeholder="Enter name" id="name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <input type="subject" class="form-control" placeholder="Enter subject" id="subject">
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here." style="height:170px"
+                type="message"></textarea>
+            </div>
+            <button id="button" type="submit" class="btn btn-light">Submit
+              <!-- <a href="mailto:rkhorne09@gmail.com">Contact us!</a> -->
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
+  <footer>
+    <nav class="navbar fixed-bottom">
+      <a class="navbar-brand" id="footer" href="#">CopyRight 2021 - Rachel Wanke</a>
+    </nav>
+  </footer>
 
   <script>
     window.onscroll = function () { myFunction() };
