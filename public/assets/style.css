@@ -15,7 +15,7 @@
 }
 
 #lineDivider{
-  width: 50%;
+  width: 80%;
   height: 5%;
   
 }
@@ -104,7 +104,7 @@ text-align: center;
 }
 
 .sectionSpacing {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   margin-top: 5%;
   font-family: 'Roboto Slab', serif;
 }
@@ -123,6 +123,7 @@ h1{
 
 #aboutMeText {
   font-family: 'Montserrat', sans-serif;
+  color: #0D2E5B;
 }
 
 .fab {
@@ -172,8 +173,8 @@ html {
   justify-content: space-around;
 }
 .card {
-  width: 600px;
-  height: 360px;
+  width: 350px;
+  height: 310px;
   border-radius: 15px;
   padding: 1.5rem;
   background: #fff;
@@ -254,7 +255,10 @@ html {
   width: 60%;
 }
 
-
+#portfolio {
+  font-family: 'Roboto Slab', serif;
+  color: #0D2E5B;
+}
 /*Skills Section*/
 
 .skills {
@@ -347,6 +351,11 @@ html {
 
 /* Contact Forms */
 
+#contact {
+  font-family: 'Roboto Slab', serif;
+  color: #0D2E5B;
+}
+
 form {
   color:  #0D2E5B;
   font-family: 'Montserrat', sans-serif;
@@ -367,6 +376,20 @@ resize: vertical;
  border-color: #0D2E5B;
  color: white;
  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#contactInfo {
+  font-family: 'Montserrat', sans-serif;
+  color: #0D2E5B;
+}
+
+#contactDesc {
+
+  font-family: 'Montserrat', sans-serif;
+  color: #0D2E5B;
+  font-weight: bolder;
 }
 
 
@@ -402,4 +425,5 @@ footer{
   width: 50%;
   padding: 10px;
   font-size: 10%;
+  
 }
